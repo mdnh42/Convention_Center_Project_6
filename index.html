@@ -14,28 +14,32 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid d-flex justify-content-between">
-                <div>
-                    <a class="navbar-brand" href="#">Abacus Convention Center</a>
-                </div>
-                </button>
+            <div class="container-fluid">
+              <a class="navbar-brand text-black" href="#">Abacus Convention Center</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#">Subscribe</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
+       
         <!-- Carousal -->
         <div class="Slider">
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -50,27 +54,33 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>The perfect venue for your next event</h5>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="text-white">The perfect venue for your next event</h1>
+                            <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
                                 consequat duis enim velit </p>
                             <button class="btn btn-primary text-white">Book Now</button>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                        <div class="carousel-caption  d-md-block">
+                            <h1 class="text-white">The perfect venue for your next event</h1>
+                            <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit </p>
+                            <button class="btn btn-primary text-white">Book Now</button>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                        <div class="carousel-caption  d-md-block">
+                            <h1 class="text-white">The perfect venue for your next event</h1>
+                            <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit </p>
+                            <button class="btn btn-primary text-white">Book Now</button>
                         </div>
                     </div>
+                   
+                   
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                     data-bs-slide="prev">
@@ -99,59 +109,79 @@
                     <button class="btn btn-primary">Explorer Our Album</button>
                 </div>
             </div>
+            <!-- Modal Start-->
+            <div class="modal" tabindex="">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Modal End -->
         </div>
         <div class="our_package container">
+            <h2 class="text-center display-2 py-3">Our Pakhage</h2>
             <div class="d-flex justify-content-center flex-wrap">
-                <div class="card mx-4 my-4">
-                    <h3>300</h3>
+                <div class="card mx-4 my-4 p-2 shadow bg-body-tertiary">
+                    <h3>Free</h3>
                     <h3>Business Fair</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <ul>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <button class="btn btn-primary">Choose Plan</button>
+                        <li>limited space access</li>
+                        <li>Secuirty facility</li>
+                        <li>event support</li>
+                        <li>Decoration design</li>
+                        <li>Per day bill</li>
+                        <button class="btn btn-primary my-3">Choose Plan</button>
                     </ul>
                 </div>
-                <div class="card  mx-4 my-4">
+                <div class="card mx-4 my-4 p-2 shadow bg-body-tertiary">
                     <h3>300</h3>
                     <h3>Business Fair</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <ul>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <button class="btn btn-primary">Choose Plan</button>
+                        <li>limited space access</li>
+                        <li>Secuirty facility</li>
+                        <li>event support</li>
+                        <li>Decoration design</li>
+                        <li>Per day bill</li>
+                        <button class="btn btn-primary my-3">Choose Plan</button>
                     </ul>
                 </div>
-                <div class="card  mx-4 my-4">
-                    <h3>300</h3>
+                <div class="bg-primary-subtle card mx-4 my-4 p-2 shadow-lg bg-body-tertiary">
+                    <h3>500</h3>
                     <h3>Business Fair</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <ul>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <button class="btn btn-primary">Choose Plan</button>
+                        <li>limited space access</li>
+                        <li>Secuirty facility</li>
+                        <li>event support</li>
+                        <li>Decoration design</li>
+                        <li>Per day bill</li>
+                        <button class="btn btn-primary my-3">Choose Plan</button>
                     </ul>
                 </div>
-                <div class="card mx-4 my-4">
-                    <h3>300</h3>
+                <div class="card mx-4 my-4 p-2 shadow bg-body-tertiary">
+                    <h3>700</h3>
                     <h3>Business Fair</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <ul>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <li>lorem3</li>
-                        <button class="btn btn-primary">Choose Plan</button>
+                        <li>limited space access</li>
+                        <li>Secuirty facility</li>
+                        <li>event support</li>
+                        <li>Decoration design</li>
+                        <li>Per day bill</li>
+                        <button class="btn btn-primary my-3">Choose Plan</button>
                     </ul>
                 </div>
             </div>
@@ -159,21 +189,21 @@
         <div class="client container">
             <h1 class="display-1 text-center">Happy Clients Says</h1>
             <div class="d-flex justify-content-around align-items-center py-5 text-center">
-                <div class="card mx-4 my-4">
+                <div class="card mx-4 my-4 w-75">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eos consectetur odit laborum
                         dignissimos amet non dicta tempora. At, vitae?</p>
                     <img class="img-fluid" src="images/person 1.png" alt="">
                     <h3>Name</h3>
                     <p>Banker</p>
                 </div>
-                <div class="card mx-4 my-4">
+                <div class="card mx-4 my-4 w-75">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eos consectetur odit laborum
                         dignissimos amet non dicta tempora. At, vitae?</p>
                     <img class="img-fluid" src="images/person 2.png" alt="">
                     <h3>Name</h3>
                     <p>Banker</p>
                 </div>
-                <div class="card mx-4 my-4">
+                <div class="card mx-4 my-4 w-75">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eos consectetur odit laborum
                         dignissimos amet non dicta tempora. At, vitae?</p>
                     <img class="img-fluid" src="images/person 3.png" alt="">
